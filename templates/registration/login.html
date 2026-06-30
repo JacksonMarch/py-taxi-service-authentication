@@ -9,7 +9,6 @@
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit">
-{#  Дозволяє після логіну потрапити відразу на ту сторінку, на яку хотіли#}
   <input type="hidden" name="next" value="{{ next }}">
   </form>
 {% endblock %}
